@@ -1,0 +1,51 @@
+{
+  "contracts": {
+    "FungibleToken": {
+      "source": "./contracts/FungibleToken.cdc",
+      "aliases": {
+        "testnet": "0x9a0766d93b6608b7"
+      }
+    },
+    "FlowToken": {
+      "source": "./contracts/FlowToken.cdc",
+      "aliases": {
+        "testnet": "0x7e60df042a9c0868"
+      }
+    },
+    "MessageBoard": "./contracts/MessageBoard.cdc"
+  },
+  "networks": {
+    "emulator": {
+      "host": "127.0.0.1:3569",
+      "chain": "flow-emulator"
+    },
+    "testnet": {
+      "host": "access.devnet.nodes.onflow.org:9000",
+      "chain": "flow-testnet"
+    }
+  },
+  "accounts": {
+    "emulator-account": {
+      "address": "0xf8d6e0586b0a20c7",
+      "keys": "eb4347b08ebd2f74d38bec1026b07430fe04510c95afe8534735677a3410dd87"
+    },
+    "shared-admin": {
+      "address": "0x33c817669ac07662",
+      "keys": "097e7918c5d1d3a85f0b39fd4626220b38ad10c9ea4f6e9f41032190c8575846",
+      "chain": "flow-testnet"
+    },
+    "contract-admin": {
+      "address": "0x14fbf315964af758",
+      "keys": "6051cbff3c5617216c54c8b0f548ae0836411f80a0d6ab65ca7e8e26cc675e01",
+      "chain": "flow-testnet"
+    }
+  },
+  "deployments": {
+    "emulator": {},
+    "testnet": {
+      "contract-admin": [
+        "MessageBoard"
+      ]
+    }
+  }
+}
