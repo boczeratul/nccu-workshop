@@ -2,10 +2,6 @@ import MessageBoard from "../contracts/MessageBoard.cdc"
 
 transaction(message: String) {
   prepare(account: AuthAccount) {
-    
-  }
-
-  execute {
-    MessageBoard.setMessage(message: message)
+    MessageBoard.setMessage(message: message, author: account.address)
   }
 }

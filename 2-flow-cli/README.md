@@ -1,6 +1,6 @@
 # 2 Flow CLI
 
-- [Install](https://docs.onflow.org/flow-cli/install/) Flow CLI (Command Line Interface).
+- [Install Flow CLI (Command Line Interface)](https://docs.onflow.org/flow-cli/install/).
 - Create a key pair
 ```sh
 flow keys generate
