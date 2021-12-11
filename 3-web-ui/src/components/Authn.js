@@ -5,11 +5,11 @@ const Authn = () => {
   const [address, setAddress] = useState('')
 
   const loginOrLogout = () => {
-    if (address) {
-      fcl.unauthenticate()
-    } else {
-      fcl.authenticate()
-    }
+    // if (address) {
+    //   fcl.unauthenticate()
+    // } else {
+    //   fcl.authenticate()
+    // }
   }
 
   useEffect(() => {

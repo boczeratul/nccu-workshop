@@ -5,9 +5,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-fcl.config()
-  .put('accessNode.api', 'https://access-testnet.onflow.org')
-  .put('challenge.handshake', 'https://flow-wallet-testnet.blocto.app/authn')
+// fcl.config()
+//   .put('accessNode.api', 'https://access-testnet.onflow.org')
+//   .put('challenge.handshake', 'https://flow-wallet-testnet.blocto.app/authn')
 
 ReactDOM.render(
   <React.StrictMode>
