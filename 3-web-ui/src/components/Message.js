@@ -26,11 +26,11 @@ const Message = () => {
   const [isProcessing, setIsProcessing] = useState(false)
 
   const updateMessage = () => {
-    fcl.send([
-      fcl.script(getMessageSciprt)
-    ])
-      .then(fcl.decode)
-      .then(setCurrentMessage)
+    // fcl.send([
+    //   fcl.script(getMessageSciprt)
+    // ])
+    //   .then(fcl.decode)
+    //   .then(setCurrentMessage)
   }
 
   const handleInputUpdate = (event) => {
@@ -41,16 +41,16 @@ const Message = () => {
     setIsProcessing(true)
 
     fcl.send([
-      fcl.transaction(setMessageTransaction),
-      fcl.args([
-        fcl.arg(newMessage, types.String)
-      ]),
-      fcl.proposer(fcl.currentUser().authorization),
-      fcl.authorizations([
-        fcl.currentUser().authorization
-      ]),
-      fcl.payer(fcl.currentUser().authorization),
-      fcl.limit(100)
+      // fcl.transaction(setMessageTransaction),
+      // fcl.args([
+      //   fcl.arg(newMessage, types.String)
+      // ]),
+      // fcl.proposer(fcl.currentUser().authorization),
+      // fcl.authorizations([
+      //   fcl.currentUser().authorization
+      // ]),
+      // fcl.payer(fcl.currentUser().authorization),
+      // fcl.limit(100)
     ])
       .then(({ transactionId }) => {
         const unsub = fcl
