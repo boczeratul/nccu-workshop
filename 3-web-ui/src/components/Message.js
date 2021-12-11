@@ -1,24 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import * as fcl from '@onflow/fcl'
-import * as types from '@onflow/types'
+// import * as types from '@onflow/types'
 
-const getMessageSciprt = `
-import MessageBoard from 0x14fbf315964af758
+// const getMessageSciprt = `
+// import MessageBoard from 0x14fbf315964af758
 
-pub fun main(): String {
-  return MessageBoard.getMessage()
-}
-`;
+// pub fun main(): String {
+//   return MessageBoard.getMessage()
+// }
+// `;
 
-const setMessageTransaction = `
-import MessageBoard from 0x14fbf315964af758
+// const setMessageTransaction = `
+// import MessageBoard from 0x14fbf315964af758
 
-transaction(message: String) {
-  prepare(account: AuthAccount) {
-    MessageBoard.setMessage(message: message, author: account.address)
-  }
-}
-`
+// transaction(message: String) {
+//   prepare(account: AuthAccount) {
+//     MessageBoard.setMessage(message: message, author: account.address)
+//   }
+// }
+// `
 
 const Message = () => {
   const [currentMessage, setCurrentMessage] = useState('')
