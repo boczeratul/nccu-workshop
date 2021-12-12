@@ -23,7 +23,7 @@ flow scripts execute ./scripts/getMessage.cdc --network testnet
 
 - Update the message in the contract.
 ```sh
-flow transactions send ./transactions/setMessage.cdc "Hello World" --network testnet --payer contract-admin
+flow transactions send ./transactions/setMessage.cdc "Hello World" --network testnet --signer contract-admin
 ```
 
 - Get the current message in the contract again.
